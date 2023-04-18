@@ -5,9 +5,11 @@ using UnityEngine;
 public class footprint_script : MonoBehaviour
 {
     // Start is called before the first frame update
+    public float disappearTime;
     void Start()
     {
-        Destroy(this.gameObject, 5.0f);
+        disappearTime = 100.0f;
+        Destroy(this.gameObject, disappearTime);
     }
 
     // Update is called once per frame
